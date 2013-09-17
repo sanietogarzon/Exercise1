@@ -3,6 +3,8 @@
 #include <iostream>
 #include "Manager.h"
 
+
+
 Employee::Employee(int id, char* name)
    {
    ID = id;
@@ -19,7 +21,7 @@ Employee::~Employee()
       delete [] name;
    }
 
-void Employee::setBoss(Manager* newBoss)
+void Employee::setBoss(Manager* newBoss) 
    {
    boss = newBoss;
    }
@@ -46,4 +48,9 @@ int Employee::getHours()
 int Employee::getID()
    {
    return ID;
+   }
+
+char* Employee::getName()
+   {
+    return name;
    }
